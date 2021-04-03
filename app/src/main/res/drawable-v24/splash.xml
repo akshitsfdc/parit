@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/fa_splash_back" />
+<!--    <item android:drawable="@drawable/splash_blue"-->
+<!--    android:gravity="fill_horizontal|fill_vertical"/>-->
+
+<!-- Set the Background Image-->
+<item android:gravity="center" android:width="130dp" android:height="130dp">
+    <bitmap android:src="@drawable/popat"/>
+
+</item>
+
+</layer-list>

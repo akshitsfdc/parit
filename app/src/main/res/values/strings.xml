@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Popat</string>
+    <string name="send_popat">Send Popat</string>
+
+    <string name="turn_server">turn:doctormeetup.com:3478</string>
+    <string name="turn_username">test</string>
+    <string name="turn_password">test123</string>
+
+    <string name="stun_server">stun:doctormeetup.com:3478</string>
+    <string name="stun_username">test</string>
+    <string name="stun_password">test123</string>
+
+    <string name="stun_google_server">stun:stun1.l.google.com:19302</string>
+    <string name="stun_google_server2">stun:stun2.l.google.com:19302</string>
+
+    <string name="game_request_collection">game_requests</string>
+    <string name="rooms">player_rooms</string>
+    <string name="calleeCandidates">callee_candidates</string>
+
+    <string name="game_request_order_by">createdTime</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="msg_frg_tag">message_frag</string>
+    <string name="generic_error_msg">Something went wrong!</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+
+    <string name="skip_txt_link"><u>Skip For Now</u></string>
+    <string name="profile_pic_path">profile_pictures/</string>
+    <string name="user_collection">users</string>
+</resources>

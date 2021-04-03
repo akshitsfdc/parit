@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignUpActivity"
+    >
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/logoIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_popat_logo_2"
+            android:layout_centerHorizontal="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/contentWrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/logoIcon"
+            android:layout_marginTop="50dp"
+            android:layout_centerInParent="true"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mobile_input"
+
+
+                android:layout_centerHorizontal="true"
+                android:inputType="textEmailAddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                app:boxCornerRadiusBottomEnd="@dimen/login_textbox_corner"
+                app:boxCornerRadiusBottomStart="@dimen/login_textbox_corner"
+                app:boxCornerRadiusTopEnd="@dimen/login_textbox_corner"
+                app:boxCornerRadiusTopStart="@dimen/login_textbox_corner"
+                app:boxStrokeColor="@color/primary"
+                app:errorTextColor="@color/warn"
+                app:hintEnabled="true"
+                android:textColorHint="@color/grey"
+                android:scaleX=".75"
+                android:scaleY=".75"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fieldEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/grey"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordWrapper"
+
+                android:layout_below="@+id/mobile_input"
+                android:layout_centerHorizontal="true"
+                android:inputType="textEmailAddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                app:boxCornerRadiusBottomEnd="@dimen/login_textbox_corner"
+                app:boxCornerRadiusBottomStart="@dimen/login_textbox_corner"
+                app:boxCornerRadiusTopEnd="@dimen/login_textbox_corner"
+                app:boxCornerRadiusTopStart="@dimen/login_textbox_corner"
+                app:boxStrokeColor="@color/primary"
+                app:errorTextColor="@color/warn"
+                app:hintEnabled="true"
+                android:textColorHint="@color/grey"
+                android:scaleX=".75"
+                android:scaleY=".75"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/fieldPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/grey"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/confirmPasswordWrapper"
+
+                android:layout_below="@+id/passwordWrapper"
+                android:layout_centerHorizontal="true"
+                android:inputType="textEmailAddress"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                app:boxCornerRadiusBottomEnd="@dimen/login_textbox_corner"
+                app:boxCornerRadiusBottomStart="@dimen/login_textbox_corner"
+                app:boxCornerRadiusTopEnd="@dimen/login_textbox_corner"
+                app:boxCornerRadiusTopStart="@dimen/login_textbox_corner"
+                app:boxStrokeColor="@color/primary"
+                app:errorTextColor="@color/warn"
+                app:hintEnabled="true"
+                android:textColorHint="@color/grey"
+                android:scaleX=".75"
+                android:scaleY=".75"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/confirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/grey"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signUpButton"
+                android:layout_below="@+id/confirmPasswordWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:textAllCaps="false"
+                app:cornerRadius="@dimen/login_textbox_corner"
+                android:text="Sign Up"
+                android:scaleX=".75"
+                android:scaleY=".75"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                app:strokeColor="@color/primary"
+                android:backgroundTint="@color/light_brown"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+</RelativeLayout>

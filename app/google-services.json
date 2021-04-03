@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "554148394098",
+    "project_id": "popat-5018b",
+    "storage_bucket": "popat-5018b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554148394098:android:d7064f49c5740bb628feeb",
+        "android_client_info": {
+          "package_name": "com.softgames.popat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554148394098-cej3sirqm4qe1ph9jnorsntkimgesg7u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.softgames.popat",
+            "certificate_hash": "514c8a9b85a17271b4f96be33bb621c953147651"
+          }
+        },
+        {
+          "client_id": "554148394098-qv29cl9p6om4unqibbsfvp6r8ts99qks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF4_KZlrH0mWa8eEOebwHeYcSO4j4YkDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554148394098-qv29cl9p6om4unqibbsfvp6r8ts99qks.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

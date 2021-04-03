@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AccountVerificationActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        >
+        <ImageView
+            android:id="@+id/shieldImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_shield"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/roboto"
+            android:text="We have sent you an email with account verification link, kindly check your inbox and click on verification link"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/verifiedButton"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/secondary"
+            android:layout_height="60dp"
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/login_textbox_corner"
+            android:text="I have verified my email"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/resendButton"
+
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/login_textbox_corner"
+            android:text="Resend verification email"
+            android:scaleX=".75"
+            android:scaleY=".75"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

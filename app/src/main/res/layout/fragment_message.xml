@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.MessageFragment"
+    android:background="@color/overlay"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="25dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password Reset"
+                android:textSize="25sp"
+
+                android:textColor="@color/google_blue"/>
+
+            <LinearLayout
+                android:id="@+id/msgLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/okButton"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OK"
+                    android:scaleX=".75"
+                    android:scaleY=".75"
+                    app:cornerRadius="10dp"
+                    android:backgroundTint="@color/google_blue"
+                    >
+
+                </com.google.android.material.button.MaterialButton>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/editLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/mobile_input"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/logoIcon"
+                    android:layout_centerHorizontal="true"
+                    android:inputType="textEmailAddress"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    app:boxCornerRadiusBottomEnd="@dimen/login_textbox_corner"
+                    app:boxCornerRadiusBottomStart="@dimen/login_textbox_corner"
+                    app:boxCornerRadiusTopEnd="@dimen/login_textbox_corner"
+                    app:boxCornerRadiusTopStart="@dimen/login_textbox_corner"
+                    app:boxStrokeColor="@color/primary"
+                    app:errorTextColor="@color/warn"
+                    app:hintEnabled="true"
+                    android:textColorHint="@color/grey"
+                    android:scaleX=".75"
+                    android:scaleY=".75"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fieldEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/grey"
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/sendMailButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:textAllCaps="false"
+                    app:cornerRadius="@dimen/login_textbox_corner"
+                    android:text="Send Reset Email"
+                    android:scaleX=".75"
+                    android:scaleY=".75"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
